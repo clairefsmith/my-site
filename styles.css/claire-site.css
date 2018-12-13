@@ -1,0 +1,270 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+hr {
+  width: 30%;
+  margin: 30px auto;
+}
+
+/*----------HEADINGS-----------------------*/
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: lighter;
+  color: #e29696;
+  font-size: 8em;
+  letter-spacing: 5px;
+  padding: 200px 0 0 100px;
+}
+
+@media all and (max-width: 575px) {
+  h1 {
+    font-size: 4em;
+    padding-left: 75px;
+  }
+}
+
+h2 {
+  font-family: 'Roboto Light', sans-serif;
+  font-weight: lighter;
+  font-size: 3em;
+  color: #525252;
+}
+
+/*---------------------------------------------*/
+/*NAVIGATION*/
+/*---------------------------------------------*/
+.navbar {
+  background-color: #f7f7f7;
+  height: 80px;
+  border-bottom: 1px solid #e29696;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+@media all and (max-width: 991px) {
+  .main-nav {
+    font-size: 12px;
+    float: none;
+    text-align: center;
+    margin-right: 0;
+  }
+}
+
+.main-nav li {
+  display: inline-block;
+  padding-top: 20px;
+  margin-left: 30px;
+  font-size: 2em;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 5px 10px 10px 0;
+  color: #525252;
+  text-decoration: none;
+  font-family: Roboto-Light;
+  font-weight: lighter;
+  margin-right: 10px;
+}
+
+@media all and (max-width: 575px) {
+  .main-nav li a:link {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+}
+
+/*---------------------------------------------*/
+/*MAIN*/
+/*---------------------------------------------*/
+.top-container {
+  font-size: 16px;
+  height: 100vh;
+  background-color: #FDF2F2;
+}
+
+.top-container h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #b03030;
+  font-size: 3em;
+  font-weight: 100;
+  padding-top: 75px;
+  margin-left: 200px;
+}
+
+@media all and (max-width: 991px) {
+  .top-container {
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .top-container h3 {
+    font-size: 2em;
+    margin-left: 75px;
+  }
+}
+
+/*---------------------------------------------*/
+/*ABOUT*/
+/*---------------------------------------------*/
+.who-i-am {
+  height: 100vh;
+  text-align: center;
+  background-image: url('../Images/background.png');
+  background-size: cover;
+  overflow: hidden;
+}
+
+@media all and (max-width: 575px) {
+  .who-i-am {
+    height: 100%;
+  }
+}
+
+.who-i-am h2 {
+  margin-top: 50px;
+}
+
+.who-i-am p {
+  font-family: Roboto-Light;
+  width: 50%;
+  margin: 50px auto;
+  font-size: 20px;
+  color: #525252;
+}
+
+@media screen and (max-width: 768px) {
+  .who-i-am p {
+    margin: 30px auto;
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .who-i-am p {
+    font-size: 15px;
+  }
+
+  .who-i-am h2 {
+    font-size: 2.5em;
+  }
+}
+
+/*---------------------------------------------*/
+/*WORK*/
+/*---------------------------------------------*/
+.my-work {
+  height: 100vh;
+  background-color: #f7f7f7;
+  text-align: center;
+  padding-top: 50px;
+}
+
+@media all and (max-width: 575px) {
+  .my-work {
+    height: 100%;
+  }
+}
+
+.my-work h2 {
+  margin-bottom: 20px;
+}
+
+.my-work img {
+  width: 50%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.my-work img:hover {
+  opacity: .7;
+}
+
+.my-work p {
+  font-family: 'Roboto Light', sans-serif;
+  font-weight: lighter;
+  margin-top: 10px;
+  color: #525252;
+}
+
+.icons {
+  width: 25%;
+}
+
+
+
+
+/*---------------------------------------------*/
+/*FOOTER*/
+/*---------------------------------------------*/
+.bottom-container {
+  background-color: #FDF2F2;
+  height: 30vh;
+  text-align: center;
+}
+
+.bottom-container h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #EE5858;
+  font-size: 3em;
+  font-weight: 100;
+  padding: 30px 0 30px 0;
+}
+
+.btn {
+  text-decoration: none;
+  background: #FFFFFF;
+  font-family: Roboto-Light;
+  font-size: 24px;
+  color: #EE5858;
+  letter-spacing: 2.3px;
+  text-align: center;
+  border-radius: 40px;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid grey;
+}
+
+.copyright {
+  color: #525252;
+  font-size: 0.75rem;
+  padding: 30px 0;
+  font-family: Roboto-Light;
+}
+
+.row {
+  margin: 25px 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 33.3%;
+  margin: 40px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    width: 50%;
+    margin: 20px 0;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .column {
+    width: 100%;
+  }
+}
